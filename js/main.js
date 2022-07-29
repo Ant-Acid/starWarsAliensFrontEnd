@@ -14,7 +14,7 @@ async function apiRequest() { //async function to make the request
         document.getElementById('alienExamples').innerText = data.notableExamples
         document.getElementById('alienImage').src = data.image
         document.getElementById('alienCaption').innerText = data.speciesName
-    } catch (error) {
-        console.log(error)
+    } catch (error) { //if the request fails
+        console.log(error) //log the error
     }
 }
